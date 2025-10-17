@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2">
+    <tool name="Multiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="select" val="5"/>
+    </tool>
+  </lib>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(550,290)" to="(550,300)"/>
+    <wire from="(350,260)" to="(350,330)"/>
+    <wire from="(470,290)" to="(520,290)"/>
+    <wire from="(150,350)" to="(270,350)"/>
+    <wire from="(520,330)" to="(580,330)"/>
+    <wire from="(250,410)" to="(370,410)"/>
+    <wire from="(90,350)" to="(140,350)"/>
+    <wire from="(540,310)" to="(580,310)"/>
+    <wire from="(530,290)" to="(530,320)"/>
+    <wire from="(150,220)" to="(150,310)"/>
+    <wire from="(350,260)" to="(580,260)"/>
+    <wire from="(130,270)" to="(160,270)"/>
+    <wire from="(160,310)" to="(160,410)"/>
+    <wire from="(550,290)" to="(580,290)"/>
+    <wire from="(370,280)" to="(580,280)"/>
+    <wire from="(150,310)" to="(160,310)"/>
+    <wire from="(530,290)" to="(540,290)"/>
+    <wire from="(160,200)" to="(160,270)"/>
+    <wire from="(90,310)" to="(150,310)"/>
+    <wire from="(140,240)" to="(200,240)"/>
+    <wire from="(130,390)" to="(190,390)"/>
+    <wire from="(530,320)" to="(580,320)"/>
+    <wire from="(370,280)" to="(370,410)"/>
+    <wire from="(150,220)" to="(200,220)"/>
+    <wire from="(220,310)" to="(270,310)"/>
+    <wire from="(150,350)" to="(150,430)"/>
+    <wire from="(260,220)" to="(370,220)"/>
+    <wire from="(220,290)" to="(220,310)"/>
+    <wire from="(600,340)" to="(600,420)"/>
+    <wire from="(90,270)" to="(130,270)"/>
+    <wire from="(150,430)" to="(190,430)"/>
+    <wire from="(160,200)" to="(200,200)"/>
+    <wire from="(540,290)" to="(540,310)"/>
+    <wire from="(160,410)" to="(190,410)"/>
+    <wire from="(520,290)" to="(520,330)"/>
+    <wire from="(470,290)" to="(470,390)"/>
+    <wire from="(620,300)" to="(640,300)"/>
+    <wire from="(320,330)" to="(350,330)"/>
+    <wire from="(550,300)" to="(580,300)"/>
+    <wire from="(370,270)" to="(580,270)"/>
+    <wire from="(140,240)" to="(140,350)"/>
+    <wire from="(160,270)" to="(170,270)"/>
+    <wire from="(160,310)" to="(170,310)"/>
+    <wire from="(140,350)" to="(150,350)"/>
+    <wire from="(370,220)" to="(370,270)"/>
+    <wire from="(130,270)" to="(130,390)"/>
+    <wire from="(520,290)" to="(530,290)"/>
+    <wire from="(540,290)" to="(550,290)"/>
+    <comp lib="5" loc="(640,300)" name="LED"/>
+    <comp lib="2" loc="(620,300)" name="Multiplexer">
+      <a name="select" val="3"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="6" loc="(80,422)" name="Text">
+      <a name="text" val="F3"/>
+      <a name="font" val="SansSerif plain 16"/>
+    </comp>
+    <comp lib="6" loc="(45,316)" name="Text">
+      <a name="text" val="F1"/>
+      <a name="font" val="SansSerif plain 16"/>
+    </comp>
+    <comp lib="0" loc="(90,350)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(260,220)" name="NAND Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="0" loc="(470,390)" name="Ground"/>
+    <comp lib="0" loc="(90,310)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(90,270)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(250,410)" name="NOR Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="1" loc="(320,330)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(559,434)" name="Text">
+      <a name="text" val="Seletor"/>
+    </comp>
+    <comp lib="6" loc="(435,401)" name="Text">
+      <a name="text" val="Ground"/>
+    </comp>
+    <comp lib="6" loc="(674,451)" name="Text">
+      <a name="text" val="001  -&gt; F2"/>
+    </comp>
+    <comp lib="1" loc="(220,290)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(600,420)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(673,439)" name="Text">
+      <a name="text" val="000  -&gt; F1"/>
+    </comp>
+    <comp lib="6" loc="(675,462)" name="Text">
+      <a name="text" val="010  -&gt; F3"/>
+    </comp>
+    <comp lib="6" loc="(80,227)" name="Text">
+      <a name="text" val="F2"/>
+      <a name="font" val="SansSerif plain 16"/>
+    </comp>
+  </circuit>
+</project>
